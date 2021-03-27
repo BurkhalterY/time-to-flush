@@ -1,13 +1,13 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class User_type_model extends MY_Model
+class Record_model extends MY_Model
 {
 	/* Set MY_Model variables */
-	protected $_table = 'users_types';
+	protected $_table = 'records';
 	protected $primary_key = 'id';
 	protected $protected_attributes = ['id'];
-	protected $has_many = ['users' => ['primary_key' => 'fk_user_type',
-									   'model' => 'user_model']];
+	protected $belongs_to = ['matter'=> ['primary_key' => 'fk_matter',
+										 'model' => 'matter_model']];
 
 	/**
 	 * Constructor
