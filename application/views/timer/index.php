@@ -19,6 +19,9 @@
 	<a href="<?=base_url('stats')?>" class="btn btn-lg btn-outline-secondary">Statistiques</a>
 </div>
 <script>
+	window.onbeforeunload = function(){
+		return 'Are you sure you want to leave?';
+	};
 	var url = "<?=base_url('timer/save')?>";
 </script>
 <script src="<?=base_url('assets/js/timer.js')?>"></script>
