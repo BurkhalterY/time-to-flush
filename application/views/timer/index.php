@@ -17,10 +17,11 @@
 		</button>
 	</div>
 	<a href="<?=base_url('stats')?>" class="btn btn-lg btn-outline-secondary">Statistiques</a>
+	<a href="<?=base_url('game')?>" class="btn btn-lg btn-outline-secondary">Game</a>
 </div>
 <script>
 	window.onbeforeunload = function(){
-		return 'Are you sure you want to leave?';
+		return 'T\'es sur tu veux partir frerot?';
 	};
 	var url = "<?=base_url('timer/save')?>";
 </script>
